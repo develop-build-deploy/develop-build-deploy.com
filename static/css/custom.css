@@ -1,10 +1,14 @@
 #header {
-    background-image: url("https://themes.gohugo.io/theme/startbootstrap-clean-blog//img/home-bg.jpg");
+    background-image: url("http://www.publicdomainpictures.net/pictures/20000/velka/orange-sky.jpg");
     background-size: cover;
 }
 
 #header nav, #header .header-info, #header .title, #header a {
     color: #fff;
+}
+
+#header h1.site-title {
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
 }
 
 .header-info .subtitle, .header-info .taxonomy-type {
@@ -20,11 +24,15 @@
     color: #777;
 }
 
-footer {
+footer.entry-footer-container {
+    display: none;
+}
+
+#footer {
     margin-top: 2em;
     background-color: #eee;
 }
 
-footer, footer a {
+#footer, footer a {
     color: #777;
 }
