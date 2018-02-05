@@ -1,0 +1,30 @@
+#header {
+    background-image: url("https://themes.gohugo.io/theme/startbootstrap-clean-blog//img/home-bg.jpg");
+    background-size: cover;
+}
+
+#header nav, #header .header-info, #header .title, #header a {
+    color: #fff;
+}
+
+.header-info .subtitle, .header-info .taxonomy-type {
+    font-style: normal;
+}
+
+#main {
+    margin-top: 2em;
+}
+
+.entry .meta span, .entry .meta span a {
+    font-style: normal;
+    color: #777;
+}
+
+footer {
+    margin-top: 2em;
+    background-color: #eee;
+}
+
+footer, footer a {
+    color: #777;
+}
