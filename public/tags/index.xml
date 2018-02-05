@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Develop Build Deploy</title>
+    <link>https://develop-build-deploy.com/tags/</link>
+    <description>Recent content in Tags on Develop Build Deploy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 17 Jan 2018 16:13:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://develop-build-deploy.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Authors</title>
+      <link>https://develop-build-deploy.com/tags/authors/</link>
+      <pubDate>Wed, 17 Jan 2018 16:13:00 +0100</pubDate>
+      
+      <guid>https://develop-build-deploy.com/tags/authors/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
