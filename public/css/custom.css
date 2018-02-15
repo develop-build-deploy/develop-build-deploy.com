@@ -1,6 +1,7 @@
 #header {
-    background-image: url("/images/orange-sky.jpg");
-    background-size: cover;
+    background: #40E0D0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #header nav, #header .header-info, #header .title, #header a {
@@ -49,4 +50,14 @@ footer.entry-footer-container {
 
 #footer, footer a {
     color: #777;
+}
+
+.header::after {
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+    opacity: 0;
+}
+
+.footer::before {
+    border: none;
 }
