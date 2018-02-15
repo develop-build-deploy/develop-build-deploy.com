@@ -1,5 +1,5 @@
 baseURL = "https://develop-build-deploy.com"
-title = "Develop Build Deploy"
+title = "Develop, Build, Deploy - Repeat!"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
@@ -20,7 +20,7 @@ pygmentsCodefences = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "Your resource on infrastructure-as-code, immutable servers, blue/green deployment, and continuous delivery."
+description = "Your resource on Continuous Delivery: Infrastructure-as-Code, Immutable Servers, Zero-Downtime Blue/Green deployment, Software Tests and Database Migrations."
 title404 = "Nothing's here!"
 
 [params.assets]
@@ -60,8 +60,8 @@ titleSeparator = "•"
 
 [params.social]
 email = "manuel@kiessling.net"
-github = "manuelkiessling"
-twitter = "manuelkiessling"
+github = "DevelopBuildDeploy"
+twitter = "DevBuildDeploy"
 
 [params.social.config]
 platforms = ["github","twitter","email"]

@@ -12,14 +12,8 @@
   </url>
   
   <url>
-    <loc>https://develop-build-deploy.com/tutorials/the-five-pillars-of-a-healthy-continuous-delivery-setup/</loc>
+    <loc>https://develop-build-deploy.com/tutorials/healthy-continuous-delivery-infrastructure-as-code/</loc>
     <lastmod>2018-01-17T16:13:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://develop-build-deploy.com/tags/authors/</loc>
-    <lastmod>2018-01-17T16:13:00+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -45,7 +39,6 @@
   
   <url>
     <loc>https://develop-build-deploy.com/tags/</loc>
-    <lastmod>2018-01-17T16:13:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   

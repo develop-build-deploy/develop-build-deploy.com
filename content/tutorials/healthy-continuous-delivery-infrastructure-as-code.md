@@ -1,30 +1,34 @@
 ---
 date: 2018-01-17T16:13:00+01:00
 lastmod: 2018-01-17T16:13:00+01:00
-title: The Five Pillars of a healthy Continuous Delivery setup
+title: "Healthy Continuous Delivery: Infrastructure-as-Code"
+description: 'How the Infrastructure-as-Code approach leads to better systems management - Part of "The Five Pillars of a healthy Continuous Delivery setup" series'
 authors: ["manuelkiessling"]
-tags:
-  - authors
-slug: the-five-pillars-of-a-healthy-continuous-delivery-setup
+slug: healthy-continuous-delivery-infrastructure-as-code
 ---
+
+## Preface
+
+This is part one in a five parts series.
+
 
 ## Introduction
 
-The goal of this project is to teach you how to build successful Continuous Delivery setups for your software products. The goal of this post is to create a shared understanding of the different practices and principles that together are the foundation for Continuous Delivery setups that are stable, maintainable, and adaptable.
+The goal of this project is to teach you how to build successful Continuous Delivery setups for your software products. The goal of this introductionary series is to create a shared understanding of the different practices and principles that together are the foundation of Continuous Delivery setups that are stable, maintainable, and adaptable.
 
-I call these *the Five Pillars of a healthy Continuous Delivery setup*.
+I call these *The Five Pillars of a healthy Continuous Delivery setup*.
 
 These pillars are:
 
 * Infrastructure-as-Code
 * Immutable Servers
-* Zero-Downtime Blue-Green Deployment
+* Zero-Downtime Blue/Green Deployment
 * Software Tests
 * Software-based database Migrations
 
 This is not an ordered list. All five practices and principles are equally important for a successful setup, and they reinforce each other to form a working whole.
 
-Let's have a closer look at each:
+In this first post, we look at **Infrastructure-as-Code**.
 
 
 ## Infrastructure-as-Code
@@ -47,11 +51,11 @@ Successful infrastructures are not the sum of all the things that a team *did* w
 
 Let's illustrate this point. Imagine a simple web application infrastructure which consists of some web and some database servers, maybe some load balancers, and a certain network routing setup. Everything is set up correctly by hand, has been carefully tested, and is running smoothly.
 
-Then, a new requirement appears: some servers which do not yet have a route on the network to another set of servers now need this route. No problem: someone from the sysops team adds the route definition by hand to the network setup, by hand. Everything is still working as desired.
+Then, a new requirement appears: some servers which do not yet have a route on the network to another set of servers now need this route. No problem: someone from the sysops team adds the route definition to the network setup, by hand. Everything is working as desired.
 
 But what if sometime later, the infrastructure encounters a problem, and has to be rebuilt, at least partly? Will the networking route which had been added be in place after the rebuild? Maybe, if the colleague who implemented it remembers to do so again. Maybe, if the route definition was part of a configuration backup that was made. Maybe, if the routing change has been documented.
 
-From my personal experience with non-Infrastructure-as-Code setups I can report that typically, a lot of luck is involved in these cases. It's because the *desired target state* of such an infrastructure is only implicit - it is a floating state of knowledge distributed over the brains of the team members and glimmers of documentation here and there, never to be fully grasped, and re-achieved only by try-and-error whenever reloactions or outages demand a rebuild. And good luck onboarding new team members to such a setup.
+From my personal experience with non-Infrastructure-as-Code setups I can report that typically, a lot of luck is involved in these cases. It's because the *desired target state* of such an infrastructure is only implicit - it is a floating state of knowledge distributed over the brains of the team members and glimmers of documentation here and there, never to be fully grasped, and re-achieved only by try-and-error whenever relocations or outages demand a rebuild. And good luck onboarding new team members to such a setup efficiently.
 
 On the opposite, Infrastructure-as-Code is the collection of an *explicitly codified target state* of the infrastructure. How this target state is achieved is up to the toolset used by the team.
 
@@ -88,25 +92,3 @@ If we compare the two approaches of hand-crafted infrastructure versus Infrastru
 Why is Infrastructure-as-Code an important pillar of a healthy Continuous Delivery setup? Because Continuous Delivery can only work if the environments through which deliveries run are well understood and predictable. At the end of the day, a Continuous Delivery setup is a bit like a production line in a factory - a lot of moving parts are involved, and they all need to be in exactly the right place for each and every delivery. The complexity such a setup, and the work involved in maintaining such a setup, which more often than not has to be done under time pressure, leaves no room for ambiguity and guesswork. Only an explicitly codified infrastructure design provisioned into life by dedicated tools can provides the required maintainability and stability over the lifespan of such a setup.
 
 And, while not strictly a requirement to do Continuous Delivery successfully, it is a welcome side-effect that Infrastructure-as-Code setups tend to require much smaller operations teams than conventional setups: because teams need to put a lot less energy into the *how* of infrastructure provisioning (that's the job of the tools), and because team members need to juggle with a lot less implicit knowledge about the infrastructure design (that's all written down in the code base), a lot more productivit can be achieved even with a much smaller team.
-
-
-## Immutable Servers
-
-Infrastructure-as-Code setups love Immutable Servers. But first, what is an immutable server? Let's begin by looking at what a non-immutable server looks like. As an example, let's look at a typical web application server, for example one that hosts a PHP-based web app.
-
-This server has a certain lifecycle. First and foremost, the server system itself is provisioned. Maybe as an EC2 instance via Terraform, if an Infrastructure-as-Code setup is already in place, maybe manually on-premise.
-
-To fullfill its job, the server needs to be set up: an operating system needs to be installed and configured, the application has to be deployed onto the server, several services need to be launched. The server might be one of multiple systems which all look the same, running as a cluster behind a load-balancer, and therefore needs to be advertised to the load-balancer as a new origin server.
-
-The interesting part in the lifecycle comes now: What happens with our server system when a new version of our application software is released, or if the system configuration itself (installed software packages, config files, etc.) needs to be updated?
-
-In the classical approach, which is called *Phoenix Servers*, these changes happen in place, while the server system is running. A new application version is deployed, or other operation system software packages are updated, or config files changed and services restarted. This process can be made efficiently manageable by using configuration management software solutions like *Puppet*, *Chef*, *Ansible*, or *Salt*. The server itself lives on, probably for a very long time.
-
-This works reasonably well and is an approach that is successfully applied for a lot of infrastructures worldwide.
-
-
-
--> "any change to a running system introduces risk" !!!
-
-
-https://martinfowler.com/bliki/ImmutableServer.html
