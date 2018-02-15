@@ -15,7 +15,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://develop-build-deploy.com/about/</guid>
-      <description></description>
+      <description>The goal of Develop, Build, Deploy - Repeat! is to teach software developers and systems administrators how to build successful Continuous Delivery setups for software products - setups that are stable, maintainable, and adaptable.
+To achieve this goal, this project will regularly release educational material in the form of blog posts, tutorials, books, and video courses.</description>
     </item>
     
   </channel>

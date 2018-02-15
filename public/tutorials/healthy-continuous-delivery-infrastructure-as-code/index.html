@@ -4,10 +4,10 @@
 <head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='This part of the &#34;Five Pillars of a Healthy Continuous Delivery&#34; series shows how the Infrastructure-as-Code approach leads to better systems management.'>
+<meta name='description' content='How the Infrastructure-as-Code approach leads to better systems management - Part of &#34;The Five Pillars of a healthy Continuous Delivery setup&#34; series'>
 
 <meta property='og:title' content='Healthy Continuous Delivery: Infrastructure-as-Code • Manuel Kiessling'>
-<meta property='og:description' content='This part of the &#34;Five Pillars of a Healthy Continuous Delivery&#34; series shows how the Infrastructure-as-Code approach leads to better systems management.'>
+<meta property='og:description' content='How the Infrastructure-as-Code approach leads to better systems management - Part of &#34;The Five Pillars of a healthy Continuous Delivery setup&#34; series'>
 <meta property='og:url' content='https://develop-build-deploy.com/tutorials/healthy-continuous-delivery-infrastructure-as-code/'>
 <meta property='og:site_name' content='Develop, Build, Deploy - Repeat!'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/8b50d5d8199a12f00cfbfd1061e224a9?s=256'><meta property='article:section' content='Tutorials'><meta property='article:published_time' content='2018-01-17T16:13:00&#43;01:00'/><meta property='article:modified_time' content='2018-01-17T16:13:00&#43;01:00'/><meta name='twitter:card' content='summary'><meta name='twitter:creator' content='@manuelkiessling'>
@@ -62,7 +62,7 @@
     <div class='header-info'>
       <h1 class='title'>Healthy Continuous Delivery: Infrastructure-as-Code</h1>
       
-<p class='subtitle'>This part of the &#34;Five Pillars of a Healthy Continuous Delivery&#34; series shows how the Infrastructure-as-Code approach leads to better systems management.</p>
+<p class='subtitle'>How the Infrastructure-as-Code approach leads to better systems management - Part of &#34;The Five Pillars of a healthy Continuous Delivery setup&#34; series</p>
 
 
     </div>
@@ -116,9 +116,9 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>The goal of this project is to teach you how to build successful Continuous Delivery setups for your software products. The goal of this post is to create a shared understanding of the different practices and principles that together are the foundation for Continuous Delivery setups that are stable, maintainable, and adaptable.</p>
+<p>The goal of this project is to teach you how to build successful Continuous Delivery setups for your software products. The goal of this introductionary series is to create a shared understanding of the different practices and principles that together are the foundation of Continuous Delivery setups that are stable, maintainable, and adaptable.</p>
 
-<p>I call these <em>the Five Pillars of a healthy Continuous Delivery setup</em>.</p>
+<p>I call these <em>The Five Pillars of a healthy Continuous Delivery setup</em>.</p>
 
 <p>These pillars are:</p>
 
@@ -132,7 +132,7 @@
 
 <p>This is not an ordered list. All five practices and principles are equally important for a successful setup, and they reinforce each other to form a working whole.</p>
 
-<p>In the first post, we look at <strong>Infrastructure-as-Code</strong>.</p>
+<p>In this first post, we look at <strong>Infrastructure-as-Code</strong>.</p>
 
 <h2 id="infrastructure-as-code">Infrastructure-as-Code</h2>
 
@@ -154,11 +154,11 @@
 
 <p>Let&rsquo;s illustrate this point. Imagine a simple web application infrastructure which consists of some web and some database servers, maybe some load balancers, and a certain network routing setup. Everything is set up correctly by hand, has been carefully tested, and is running smoothly.</p>
 
-<p>Then, a new requirement appears: some servers which do not yet have a route on the network to another set of servers now need this route. No problem: someone from the sysops team adds the route definition by hand to the network setup, by hand. Everything is still working as desired.</p>
+<p>Then, a new requirement appears: some servers which do not yet have a route on the network to another set of servers now need this route. No problem: someone from the sysops team adds the route definition to the network setup, by hand. Everything is working as desired.</p>
 
 <p>But what if sometime later, the infrastructure encounters a problem, and has to be rebuilt, at least partly? Will the networking route which had been added be in place after the rebuild? Maybe, if the colleague who implemented it remembers to do so again. Maybe, if the route definition was part of a configuration backup that was made. Maybe, if the routing change has been documented.</p>
 
-<p>From my personal experience with non-Infrastructure-as-Code setups I can report that typically, a lot of luck is involved in these cases. It&rsquo;s because the <em>desired target state</em> of such an infrastructure is only implicit - it is a floating state of knowledge distributed over the brains of the team members and glimmers of documentation here and there, never to be fully grasped, and re-achieved only by try-and-error whenever reloactions or outages demand a rebuild. And good luck onboarding new team members to such a setup.</p>
+<p>From my personal experience with non-Infrastructure-as-Code setups I can report that typically, a lot of luck is involved in these cases. It&rsquo;s because the <em>desired target state</em> of such an infrastructure is only implicit - it is a floating state of knowledge distributed over the brains of the team members and glimmers of documentation here and there, never to be fully grasped, and re-achieved only by try-and-error whenever relocations or outages demand a rebuild. And good luck onboarding new team members to such a setup efficiently.</p>
 
 <p>On the opposite, Infrastructure-as-Code is the collection of an <em>explicitly codified target state</em> of the infrastructure. How this target state is achieved is up to the toolset used by the team.</p>
 
@@ -214,7 +214,7 @@
         <div class='social-menu-container'>
   <nav aria-label='Social Menu'>
     <ul class='social-menu'><li>
-        <a href='https://github.com/manuelkiessling' target='_blank' rel='noopener'>
+        <a href='https://github.com/DevelopBuildDeploy' target='_blank' rel='noopener'>
           <span class='screen-reader'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
@@ -222,7 +222,7 @@
 </svg>
 </a>
       </li><li>
-        <a href='https://twitter.com/manuelkiessling' target='_blank' rel='noopener'>
+        <a href='https://twitter.com/DevBuildDeploy' target='_blank' rel='noopener'>
           <span class='screen-reader'>Open Twitter account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
