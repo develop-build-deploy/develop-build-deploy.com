@@ -33,7 +33,7 @@ In this first post, we look at **Infrastructure-as-Code**.
 
 ## Infrastructure-as-Code
 
-Running a Continuous Delivery setup successfully always means running systems infrastructures (server systems, network rules, DNS entries, firewall settings, logging setups etc.) that is completely under your control, with no surprises lurking in dark corners.
+Running a Continuous Delivery setup successfully always means running systems infrastructures (server systems, network rules, DNS entries, firewall settings, logging setups etc.) that are completely under your control, with no surprises lurking in dark corners.
 
 Why? Because at the end of the day, system infrastructures are the playing field on which the Continuous Delivery game is played. And it is only played well if the playing field is kept in excellent condition.
 
