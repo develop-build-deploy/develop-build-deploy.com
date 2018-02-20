@@ -1,3 +1,16 @@
+body, .title, h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;
+}
+
+.title, h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", HelveticaNeue, "TeX Gyre Heros", TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+}
+
+h1.title {
+    font-weight: normal;
+}
+
 #header {
     background: #40E0D0;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
@@ -14,11 +27,17 @@
 }
 
 #header h1.site-title {
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    font-weight: lighter;
+    /*text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);*/
 }
 
 p.site-description {
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9);
+}
+
+.home-section > p {
+    color: #777;
+    font-weight: lighter;
 }
 
 .header-info .subtitle, .header-info .taxonomy-type {
@@ -36,7 +55,8 @@ p.site-description {
 
 .entry .meta span, .entry .meta span a {
     font-style: normal;
-    color: #777;
+    color: #444;
+    font-weight: lighter;
 }
 
 footer.entry-footer-container {
@@ -60,4 +80,17 @@ footer.entry-footer-container {
 
 .footer::before {
     border: none;
+}
+
+span.filename.beforecode {
+    font-family: Menlo,Consolas,Monaco,Ubuntu Mono,Liberation Mono,Lucida Console,monospace;;
+    color: #777;
+    font-size: 0.75em;
+    margin-bottom: 0;
+    background: #212121;
+    padding: 8px 20px 8px 22px;
+}
+
+pre {
+    margin-top: -22px;
 }
