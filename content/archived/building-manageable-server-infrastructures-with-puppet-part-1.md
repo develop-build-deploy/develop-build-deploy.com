@@ -342,5 +342,5 @@ notice: Finished catalog run in 0.02 seconds</code></pre>
 <p></p>
 
 <p>
-And that’s it – our Puppet infrastructure is fully up and running. However, there is nothing yet within that infrastructure that actually <em>does</em> anything. Our goal is to manage the configuration of our <em>puppetclient</em> through the Puppet master running on the <em>puppetserver</em>. But we have not yet defined any content that could trigger a configuration change on the client. This is what we will do next, in <a href="/2014/03/26/building-manageable-server-infrastructures-with-puppet-part-2/">Part 2 of <em>Building manageable server infrastructures with Puppet</em></a>.
+And that’s it – our Puppet infrastructure is fully up and running. However, there is nothing yet within that infrastructure that actually <em>does</em> anything. Our goal is to manage the configuration of our <em>puppetclient</em> through the Puppet master running on the <em>puppetserver</em>. But we have not yet defined any content that could trigger a configuration change on the client. This is what we will do next, in <a href="/archived/building-manageable-server-infrastructures-with-puppet-part-2/">Part 2 of <em>Building manageable server infrastructures with Puppet</em></a>.
 </p>
