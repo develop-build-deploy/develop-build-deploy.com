@@ -2,7 +2,7 @@
 date: 2014-03-26T13:13:00+01:00
 lastmod: 2014-03-26T13:13:00+01:00
 title: "Building manageable server infrastructures with Puppet: Part 4"
-description: ''
+description: "The fourth part of this series shows how an infrastructure-wide users, rights and SSH key management can be realized through Puppet and demonstrates the use of macros in order to streamline the creation of manifests with similar content."
 authors: ["manuelkiessling"]
 slug: building-manageable-server-infrastructures-with-puppet-part-4
 ---

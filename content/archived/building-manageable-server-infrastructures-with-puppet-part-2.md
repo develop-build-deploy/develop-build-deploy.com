@@ -2,7 +2,7 @@
 date: 2014-03-26T15:13:00+01:00
 lastmod: 2014-03-26T15:13:00+01:00
 title: "Building manageable server infrastructures with Puppet: Part 2"
-description: ''
+description: "The second part of my Puppet series explains how to use the infrastructure that was set up in part 1 in order to automatically and centrally manage the configuration of a Puppet client system."
 authors: ["manuelkiessling"]
 slug: building-manageable-server-infrastructures-with-puppet-part-2
 ---
