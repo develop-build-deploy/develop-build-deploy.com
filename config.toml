@@ -66,6 +66,9 @@ twitter = "DevBuildDeploy"
 [params.social.config]
 platforms = ["github","twitter","email"]
 
+[params]
+mainSections = ["tutorials", "posts"]
+
 [taxonomies]
 author = "authors"
 category = "categories"
