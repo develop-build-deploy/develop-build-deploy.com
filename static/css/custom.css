@@ -59,6 +59,10 @@ p.site-description {
     font-weight: lighter;
 }
 
+.entry-content a {
+    border-bottom: .125em dotted #bdbdbd;
+}
+
 footer.entry-footer-container {
     display: none;
 }
