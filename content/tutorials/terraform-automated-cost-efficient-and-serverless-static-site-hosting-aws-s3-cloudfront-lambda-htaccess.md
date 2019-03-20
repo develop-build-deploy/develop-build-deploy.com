@@ -15,6 +15,9 @@ The following describes a reusable infrastructure-as-code approach for quickly p
 
 ## Introduction
 
+What's the best way to host a static web site in 2019? Well, one very scalable and cost-efficient way which can also be fully automated via an infrastructure-as-code approach is using AWS and Terraform.
+
+This way, we can set up an S3 bucket that contains our HTML, CSS, and JavaScript contents, which are then served through the global AWS content delivery network, CloudFront. We can upload and manage the site's content with any modern file transfer applications, and thanks to the AWS infrastructure, we get at least 99,9% availability (according to https://aws.amazon.com/cloudfront/sla/?nc1=h_ls).
 
 
 ## The architecture
