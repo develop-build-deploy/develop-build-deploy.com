@@ -114,11 +114,11 @@ Within VirtualBox itself, both networks are set up. Choose <em>File -&gt; Prefer
 </p>
 
 <p>
-<a href="http://wp-content/uploads/2014/03/2014-03-23-1395585448_999x519_scrot.png"><img src="http://wp-content/uploads/2014/03/2014-03-23-1395585448_999x519_scrot-300x155.png" alt="" title="VirtualBox Host-only Network settings" class="aligncenter size-medium wp-image-811" width="300" height="155"></a>
+<a href="/images/2014-03-23-1395585448_999x519_scrot.png"><img src="/images/2014-03-23-1395585448_999x519_scrot-300x155.png" alt="" title="VirtualBox Host-only Network settings" class="aligncenter size-medium wp-image-811" width="300" height="155"></a>
 </p>
 
 <p>
-<a href="http://wp-content/uploads/2014/03/2014-03-23-1395585577_1002x520_scrot.png"><img src="http://wp-content/uploads/2014/03/2014-03-23-1395585577_1002x520_scrot-300x155.png" alt="" title="VirtualBox Host-only Network DHCP settings" class="aligncenter size-medium wp-image-812" width="300" height="155"></a>
+<a href="/images/2014-03-23-1395585577_1002x520_scrot.png"><img src="/images/2014-03-23-1395585577_1002x520_scrot-300x155.png" alt="" title="VirtualBox Host-only Network DHCP settings" class="aligncenter size-medium wp-image-812" width="300" height="155"></a>
 </p>
 
 <p>
