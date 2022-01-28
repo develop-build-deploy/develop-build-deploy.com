@@ -11,7 +11,7 @@
         {{ end }}
       {{ end }}
 
-      {{ .prefix | markdownify }} &copy; {{ with ( $.Scratch.Get "copyrightStartYear" ) }}{{ . }}-{{ end }}{{ now.Year }} {{ or .holder $.Site.Title | markdownify }} {{ .suffix | markdownify }}
+    {{ .prefix | markdownify }} &copy; {{ with ( $.Scratch.Get "copyrightStartYear" ) }}{{ . }}-{{ end }}{{ now.Year }} <a href="https://manuel.kiessling.net">{{ or .holder $.Site.Title | markdownify }} {{ .suffix | markdownify }}</a>
     {{- end -}}
   {{ end }}
   </p>

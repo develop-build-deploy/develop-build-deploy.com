@@ -17,7 +17,7 @@ With this series I would like to provide a comprehensive hands-on tutorial that 
 <h2>Target audience</h2>
 
 <p>
-I believe that the readers who will get most out of this series are Linux systems administrators who already manage a small-sized network of server systems and wonder how they can grow the existing infrastructure – without having to grow the amount of time and effort put into managing these systems linearly with the number of new systems. Maybe you currently manage 5 server systems, and you ask yourself if there is a clever approach to manage 50 systems without growing your staff. You have heard about centralized configuration management and Puppet, and are eager to give it a try.
+I believe that the readers who will get the most out of this series are Linux systems administrators who already manage a small-sized network of server systems and wonder how they can grow the existing infrastructure – without having to grow the amount of time and effort put into managing these systems linearly with the number of new systems. Maybe you currently manage 5 server systems, and you ask yourself if there is a clever approach to manage 50 systems without growing your staff. You have heard about centralized configuration management and Puppet, and are eager to give it a try.
 </p>
 
 

@@ -1,4 +1,4 @@
-Copyright 2018 Manuel Kiessling
+Copyright 2022 Manuel Kießling
 
 The contents in this repository are free for personal use.
 
