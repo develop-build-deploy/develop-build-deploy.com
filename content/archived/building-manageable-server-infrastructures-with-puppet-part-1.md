@@ -43,7 +43,7 @@ For this tutorial, I would like use two Ubuntu 12.04 LTS <em>Precise Pangolin</e
 </p>
 
 <p>
-The first thing to do is to download and install VirtualBox from Oracle. It’s a free virtual machine manager which we will use to run our two virtual Ubuntu systems. As of this writing, version 4.3.8-92456 is the current release of VirtualBox, so head over to <a href="http://download.virtualbox.org/virtualbox/4.3.8/">http://download.virtualbox.org/virtualbox/4.3.8/</a> and download either <em>VirtualBox-4.3.8-92456-Win.exe</em>, <em>VirtualBox-4.3.8-92456-OSX.dmg</em>, or <em>VirtualBox-4.3.8-92456-Linux_amd64.run</em>, depending on the operating system you use. Just install it with default options once you’ve downloaded it.
+The first thing to do is to download and install VirtualBox from Oracle. It’s a free virtual machine manager which we will use to run our two virtual Ubuntu systems. As of this writing, version 6.1.32-149290 is the current release of VirtualBox, so head over to <a href="http://download.virtualbox.org/virtualbox/6.1.32/">http://download.virtualbox.org/virtualbox/6.1.32/</a> and download either <em>VirtualBox-6.1.32-149290-Win.exe</em>, <em>VirtualBox-6.1.32-149290-OSX.dmg</em>, or <em>VirtualBox-6.1.32-149290-Linux_amd64.run</em>, depending on the operating system you use. Just install it with default options once you’ve downloaded it.
 </p>
 
 <p>
